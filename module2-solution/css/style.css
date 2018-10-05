@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+}
+.container {
+	width: 95%;
+	margin: auto;
+}
+section {
+	background-color: #ccc;
+}
+
+@media (min-width: 992px ) {
+	section {
+		float: left;
+		width: 33.33333%
+	}
+}
