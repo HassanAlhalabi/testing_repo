@@ -3,7 +3,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
-    if (screenWidth < 768) {
+    if ( screenWidth < 768 ) {
       $("#collapsable-nav").collapse('hide');
     }
   });
@@ -98,13 +98,11 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
 
+      document.querySelector("#main-content").innerHTML = homeHtml;	
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
-
-      var chooseRandomCategoryName  = chooseRandomCategory(dc.loadMenuCategories());
-
 
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
