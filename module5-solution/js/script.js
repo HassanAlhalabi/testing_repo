@@ -103,7 +103,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
 
-      var chooseRandomCategoryName  = dc.loadMenuCategories();
+      var chooseRandomCategoryName  = chooseRandomCategory(dc.loadMenuCategories());
 
 
 
